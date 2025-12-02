@@ -1,0 +1,10 @@
+class CfgFunctions {
+	class ER32 {
+		class Persistency {
+			file = "Scripts\functions";
+			
+			class persistency_loadFromFile {};
+			class persistency_saveObject {};
+		};
+	};
+};
