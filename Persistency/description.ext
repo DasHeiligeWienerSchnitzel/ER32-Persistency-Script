@@ -3,7 +3,7 @@ class CfgFunctions {
 		class Persistency {
 			file = "Scripts\functions";
 			
-			class persistency_loadFromFile {};
+			class persistency_removeObject {};
 			class persistency_saveObject {};
 		};
 	};
