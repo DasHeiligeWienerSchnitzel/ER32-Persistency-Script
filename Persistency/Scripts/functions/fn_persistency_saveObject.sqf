@@ -1,9 +1,11 @@
-params ["_object"];
+params ["_objects"];
 
-if (_object in ER32_persistency_createdObjects) then {
-	private _index = ER32_persistency_createdObjects find _object;
-	ER32_persistency_createdObjects deleteAt _index;
-};
+{
+	if (_x in ER32_persistency_createdObjects) then {
+		private _index = ER32_persistency_createdObjects find _x;
+		ER32_persistency_createdObjects deleteAt _index;
+	};
 
-ER32_persistency_createdObjects pushBack _object;
-publicVariable "ER32_persistency_createdObjects";
+	ER32_persistency_createdObjects pushBack _x;
+	publicVariable "ER32_persistency_createdObjects";
+}forEach _objects;

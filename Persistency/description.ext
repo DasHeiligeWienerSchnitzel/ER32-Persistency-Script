@@ -1,6 +1,7 @@
 class CfgFunctions {
 	class ER32 {
-		class Persistency {
+		class Persistency 
+		{
 			file = "Scripts\functions";
 			
 			class persistency_removeObject {};

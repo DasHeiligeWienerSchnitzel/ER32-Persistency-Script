@@ -15,7 +15,6 @@ while { true } do {
 			"",
 			{
 				[] execVM "Scripts\ER32_persistency_copyToClipboard.sqf";
-				hint "Builds saved to clipboard!";
 			},
 			{ true }
 		] call ace_interact_menu_fnc_createAction;
